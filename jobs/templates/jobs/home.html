@@ -53,7 +53,8 @@
     <div class="container">
       <h1 class="jumbotron-heading">S I P H O . S E B I D I</h1>
       <p class="lead text-muted">My Name is sipho clifford sebidi and i'm a developer in C# and Python, and this is my blog site, grab the chips and enjoy.</p>
-      <img src="{% static 'siphoprofile.jpg' %}" style="border-radius:50%;" height='300'/>
+      <img src="{% static 'siphoprofile.jpg' %}" style="border-radius:50%;" height='300'/><br/>
+      <em><p>"You can build your own things that other people can use. And once you learn that, you’ll never be the same again."</p></em>
       <p>
         <a href="mailto:scsebidi@gmail.com" class="btn btn-secondary my-2">Email Me</a>
       </p>
@@ -62,11 +63,12 @@
 
   <div class="album py-5 bg-light">
     <div class="container">
+      <h1 class="text-center">Interests</h1><hr><br>
       <div class="row">
           {% for job in jobs.all %}
             <div class="col-md-4">
                 <div class="card mb-4 shadow-sm">           
-                    <img class = "card-img-top" src={{job.image.url}}>
+                    <a href="{{job.image}}"><img class = "card-img-top" src={{job.image}}></a>
                     <div class="card-body">
                     <p class="card-text">{{job.summary}}</p>
                     </div>

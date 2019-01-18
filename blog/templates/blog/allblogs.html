@@ -51,8 +51,8 @@
          {% for b in blogs.all %}
             <a href="{% url 'details' b.id %}"><h2>{{ b.title  }}</h2></a>
             <br/>
-            <p> {{ b.publication }} </p>
-            <img src= {{ b.image.url }} class="img-thumbnail" height='400' width='300'/>
+            <p> {{ b.publish_day_pretty }} </p>
+            <img src= {{ b.image }} class="img-thumbnail" height='400' width='300'/>
             <p>{{b.body}}</p><hr/>
         {% endfor %}
 
