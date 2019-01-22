@@ -57,18 +57,19 @@
     </div>
     </nav>
 </header>
-
-<main role="main">
-    <div class="container">
-        <h2 class="text-center pt-4">{{ blog.title  }}</h2>
-        <hr>
-        <br>
-        <p> {{ blog.publish_day_pretty }} </p>
-        <img src= {{ blog.image }} class="img-thumbnail" height='300'/>
-        <p>{{blog.body}}</p>
-    </div>
- 
-</main>
+<body>
+  <main role="main">
+      <div class="container">
+          <h2 class="text-center pt-4">{{ blog.title  }}</h2>
+          <hr>
+          <br>
+          <p> {{ blog.publish_day_pretty }} </p>
+          <img src= {{ blog.image }} class="img-thumbnail" height='300'/>
+          <p>{{blog.body}}</p>
+      </div>
+  
+  </main>
+</body>
 
 <footer class="text-muted">
   <div class="container text-center">
