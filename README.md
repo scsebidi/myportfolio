@@ -1,5 +1,6 @@
-# my portfolio
+# My Portfolio
 ## Dependencies
 - Python
 - Django
-## pip3 install -requirements.txt
+## Steps
+- pip3 install -requirements.txt
